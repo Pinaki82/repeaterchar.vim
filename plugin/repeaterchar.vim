@@ -10,5 +10,6 @@ function! Repeat()
 endfunction
 
 imap <C-u> <C-o>:call Repeat()<cr>
-
+command RepeaterChar :call Repeat()
+:amenu Plugin.RepeaterChar\ \(\:RepeaterChar\ or,\ \<\C-u\>\ in\ Insert\ mode\) :call Repeat()<CR>
 " Help: Go to Insert mode and press CTRL+U i.e., `<C-u>`.
